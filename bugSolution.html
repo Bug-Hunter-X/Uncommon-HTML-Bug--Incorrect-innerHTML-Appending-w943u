@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Correctly using innerHTML to replace content completely
+    let myDiv = document.getElementById("myDiv");
+    let newContent = "<p>This is a new paragraph.</p><p>Another one.</p>";
+    myDiv.innerHTML = myDiv.innerHTML + newContent;
+  </script>
+</body>
+</html>
